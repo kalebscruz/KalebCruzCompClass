@@ -1,6 +1,16 @@
 import numpy as np
 import time
 
+def del_function(x):
+    return x * (x - 1)
+
+delta = np.array([1e-2, 1e-4, 1e-6,1e-8])
+
+x = 1
+for h in delta:
+    ans =(del_function(x+delta)-del_function(x))/h
+print(ans)
+
 def integral_calculator_two(n):
     h = 2/n
     answer = 0
