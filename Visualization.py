@@ -34,3 +34,4 @@ part_c_y = part_c_r * np.sin(part_c_theta)
 axs[1,0].plot(part_c_x, part_c_y)
 axs[1,0].set_title('Feys function')
 
+plt.plot()
